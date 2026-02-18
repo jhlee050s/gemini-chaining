@@ -13,7 +13,7 @@ st.markdown("""
 # --- 사이드바: API 설정 ---
 with st.sidebar:
     st.header("설정")
-    api_key = "AIzaSyC3TfyxoHOzxL83V2bdnDffavqv7Ocgx68"
+    api_key = st.secrets.get("GEMINI_API_KEY", "")
     #api_key = st.text_input("Google API Key를 입력하세요", type="password")
     #st.info("[API Key 발급받기](https://aistudio.google.com/)")
     
